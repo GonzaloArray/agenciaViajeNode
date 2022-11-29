@@ -1,0 +1,32 @@
+//- Para pasar variables desde express se utiliza el signo = o #{}
+extends ./layouts/index
+
+block contenido
+    main.container.my-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="Nosotros jpg", class="img-fluid")
+
+            .col-md-7
+                h1= pagina
+                blockquote Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit perspiciatis asperiores corrupti fugiat laboriosam aperiam. Doloribus maiores commodi voluptate facilis. Ea nihil animi quod odit adipisci quae possimus placeat dolorem.
+
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni est laborum quidem cupiditate, dolorum accusantium earum exercitationem quis quos, qui facere ipsa expedita atque dolore fugit consectetur nihil eius.
+
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe repudiandae nam, laboriosam perferendis voluptatem accusantium dolor ipsa consequuntur atque enim pariatur illo voluptate aliquid sed provident tempora natus praesentium quia.
+
+            .listado-iconos
+                .container.mt-5.py-5.text-center
+                    .row
+                        .col-md-4
+                            img(src="img/icono_seguridad.svg", alt="iconos seguridad", class="img-fluid mb-4 icono")
+                            h2.mb-4 Seguridad
+                            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae asperiores quo numquam sint at quibusdam ut consectetur vero ipsum officiis, temporibus vitae libero quia molestiae dignissimos! Ex amet sint deserunt.
+                        .col-md-4
+                            img(src="img/icono_destinos.svg", alt="iconos seguridad", class="img-fluid mb-4 icono")
+                            h2.mb-4 Destinos
+                            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae asperiores quo numquam sint at quibusdam ut consectetur vero ipsum officiis, temporibus vitae libero quia molestiae dignissimos! Ex amet sint deserunt.
+                        .col-md-4
+                            img(src="img/icono_precios.svg", alt="iconos seguridad", class="img-fluid mb-4 icono")
+                            h2.mb-4 Precios
+                            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae asperiores quo numquam sint at quibusdam ut consectetur vero ipsum officiis, temporibus vitae libero quia molestiae dignissimos! Ex amet sint deserunt.

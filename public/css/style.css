@@ -1,0 +1,24 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.width{
+    width: 7rem;
+}
+.icono{
+    width: 4rem;
+}
+.slider{
+    background-image: url(../img/destinos_rio.jpg);
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    text-shadow: 1px 1px 2px black;
+}

@@ -1,0 +1,6 @@
+.d-flex
+    each testimonio in testimonios
+        .card.mx-2.my-2
+            .card-body
+                h2.fs-6= testimonio.nombre
+                p Testimonio: #{testimonio.mensaje}

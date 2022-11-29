@@ -1,0 +1,13 @@
+//- Para pasar variables desde express se utiliza el signo = o #{}
+extends ./layouts/index
+
+block contenido
+    main.container.my-5
+        .row
+            .col-md-5
+                img(src=`/img/destinos_${resultado.imagen}_ln.jpg`, alt=`${resultado.titulo}`, class="img-fluid")
+
+            .col-md-7
+                h1= resultado.titulo
+                p.mb-4= "Disponible:  " + resultado.disponibles
+                p= resultado.descripcion

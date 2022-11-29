@@ -1,0 +1,10 @@
+.row
+    each viaje in viajes
+        .col-md-6.col-lg-4.mb-4
+            .card
+                img(src=`img/destinos_${viaje.imagen}.jpg`, alt=`${viaje.titulo}`, class="card-img-top")
+                .card-body
+                    h2= viaje.titulo
+                    p #{viaje.fecha_ida} - #{viaje.fecha_vuelta}
+                    p= viaje.descripcion.substring(0, 100) + "..."
+                    a(href=`viajes/${viaje.slug}`, class="btn btn-success btn-block") Más información

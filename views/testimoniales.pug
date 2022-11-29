@@ -1,0 +1,33 @@
+extends ./layouts/index
+
+block contenido
+    main.container.my-5
+        h1.text-center.mt-5= pagina 
+        .row
+
+            h2.text-center Agrega un testimonial
+
+            .row.justify-content-center.col
+                .d-flex
+                    each testimonio in testimonios
+                        .card.mx-2.my-2
+                            .card-body
+                                h2.fs-6= testimonio.nombre
+                                p Testimonio: #{testimonio.mensaje}
+                .col-md-12
+                    if (errores)
+                        each error in errores
+                            .alert.alert-danger.col.text-center= error.mensaje
+                .col-md-8
+                    form(action="/testimoniales", method="POST")
+                        .form-group
+                            label(for="nombre") Nombre
+                            input#nombre.mb-3(type="text", placeholder="Nombre", name="nombre", class="form-control", value=nombre)
+                        .form-group
+                            label(for="correo") Correo electronico
+                            input#correo(type="email", placeholder="Correo electronico", name="correo", class="form-control", value=correo)
+                        .form-group
+                            label(for="mensaje") Mensaje
+                            textarea#mensaje(name="mensaje", cols="30", rows="10", class="form-control", placeholder="mensaje")= mensaje
+
+                        input.btn.btn-success.mt-3.btn-block(type="submit", value="Enviar")
